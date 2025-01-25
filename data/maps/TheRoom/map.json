@@ -1,9 +1,9 @@
 {
-  "id": "MAP_CONTEST_HALL_TOUGH",
-  "name": "ContestHallTough",
-  "layout": "LAYOUT_CONTEST_HALL_TOUGH",
-  "music": "MUS_CONTEST",
-  "region_map_section": "MAPSEC_DYNAMIC",
+  "id": "MAP_THE_ROOM",
+  "name": "TheRoom",
+  "layout": "LAYOUT_THE_ROOM",
+  "music": "MUS_B_FRONTIER",
+  "region_map_section": "MAPSEC_BUBBLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -13,6 +13,16 @@
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
-  "shared_events_map": "ContestHall",
-  "shared_scripts_map": "ContestHall"
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }
