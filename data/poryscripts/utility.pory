@@ -1,0 +1,6 @@
+script ResetCharacterMovement
+{
+	applymovement(VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection)
+	waitmovement(0)
+	release
+}

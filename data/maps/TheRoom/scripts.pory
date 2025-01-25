@@ -1,0 +1,28 @@
+mapscripts TheRoom_MapScripts {}
+
+script TheRoom_EventScript_DragonLady
+{
+	if(flag(FLAG_ITEM_ROUTE_104_POKE_BALL))	
+	{ 
+		msgbox(t_DragonLady_MasterBall_Lost, MSGBOX_NPC)
+		end
+	}
+	else
+	{
+		msgbox(t_DragonLady_MasterBall, MSGBOX_NPC)
+	}
+}
+
+text t_DragonLady_MasterBall
+{
+    "Hi {PLAYER}!\p"
+	"I'm going to use that MASTER BALL\n"
+	"to catch a strong DRAGON type!$"
+}
+
+text t_DragonLady_MasterBall_Lost
+{
+    "Hi {PLAYER}!\p"
+	"I had a MASTER BALL,\n"
+	"but now I cant find it anywhere!$"
+}
