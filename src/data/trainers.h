@@ -4839,10 +4839,10 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_PRESLEY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_YOUNGSTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-        .trainerName = _("PRESLEY"),
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerName = _("CLARENCE"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,

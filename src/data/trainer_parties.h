@@ -5249,13 +5249,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Humberto[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Presley[] = {
     {
     .iv = 0,
-    .lvl = 33,
-    .species = SPECIES_TROPIUS,
+    .lvl = 2,
+    .species = SPECIES_SKITTY,
     },
     {
     .iv = 0,
-    .lvl = 33,
-    .species = SPECIES_XATU,
+    .lvl = 3,
+    .species = SPECIES_RALTS,
     }
 };
 

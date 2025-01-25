@@ -17,6 +17,15 @@ NewMap1_EventScript_CitySign::
 	release
 	end
 
+NewMap1_EventScript_LittleGirl::
+	msgbox Text_BubblesGone, MSGBOX_NPC
+	end
+
+NewMap1_EventScript_Presley::
+	trainerbattle_single TRAINER_PRESLEY, Route125_Text_PresleyIntro, Route125_Text_PresleyDefeat
+	msgbox Route125_Text_PresleyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 Script_PlayerHasFullParty::
 	msgbox Text_PlayerHasFullParty, MSGBOX_DEFAULT
 	release
@@ -30,3 +39,9 @@ Text_ReceivedDratini:
 
 Text_PlayerHasFullParty:
 	.string "Ah, your party is full.$"
+
+Text_BubblesGone:
+	.string "WAAAHH!!\n"
+	.string "Some big meanie stole my bubbles!\p"
+	.string "Can you go beat them up for me?\n"
+	.string "Pwetty pwease? UwU$"
