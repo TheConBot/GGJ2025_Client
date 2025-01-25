@@ -2,10 +2,10 @@
   "id": "MAP_NEW_MAP1",
   "name": "NewMap1",
   "layout": "LAYOUT_NEW_MAP1",
-  "music": "MUS_RG_SEVII_DUNGEON",
-  "region_map_section": "MAPSEC_BUBBLE",
+  "music": "MUS_B_PALACE",
+  "region_map_section": "MAPSEC_DRAGONVILLAGE",
   "requires_flash": false,
-  "weather": "WEATHER_UNDERWATER_BUBBLES",
+  "weather": "WEATHER_SUNNY_CLOUDS",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -46,7 +46,7 @@
       "x": 4,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_FALLARBOR_TOWN_MOVE_RELEARNERS_HOUSE",
+      "dest_map": "MAP_THE_ROOM",
       "dest_warp_id": "0"
     },
     {

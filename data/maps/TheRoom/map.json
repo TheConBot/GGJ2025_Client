@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 5,
+      "x": 8,
       "y": 4,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -26,10 +26,36 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route104_EventScript_ItemPokeBall",
       "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TheRoom_EventScript_DragonLady",
+      "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP1",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
