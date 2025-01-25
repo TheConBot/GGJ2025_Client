@@ -4424,10 +4424,10 @@
     {
       "id": "LAYOUT_THE_ROOM",
       "name": "TheRoom_Layout",
-      "width": 12,
-      "height": 12,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SeashoreHouse",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/TheRoom/border.bin",
       "blockdata_filepath": "data/layouts/TheRoom/map.bin"
     },
