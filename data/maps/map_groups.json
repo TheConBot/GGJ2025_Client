@@ -623,8 +623,11 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_DragonVillage":[
+  "gMapGroup_DragonVillage": [
     "NewMap1",
     "TheRoom"
+  ],
+  "gMapGroup_Bubble": [
+
   ]
 }

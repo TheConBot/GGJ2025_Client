@@ -2,8 +2,8 @@
   "id": "MAP_THE_ROOM",
   "name": "TheRoom",
   "layout": "LAYOUT_THE_ROOM",
-  "music": "MUS_B_FRONTIER",
-  "region_map_section": "MAPSEC_BUBBLE",
+  "music": "MUS_B_PALACE",
+  "region_map_section": "MAPSEC_DRAGONVILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -14,7 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route104_EventScript_ItemPokeBall",
+      "flag": "FLAG_ITEM_ROUTE_104_POKE_BALL"
+    }
   ],
   "warp_events": [
 
