@@ -4430,6 +4430,136 @@
       "secondary_tileset": "gTileset_SeashoreHouse",
       "border_filepath": "data/layouts/TheRoom/border.bin",
       "blockdata_filepath": "data/layouts/TheRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEXUS_TREETOP",
+      "name": "NexusTreetop_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/NexusTreetop/border.bin",
+      "blockdata_filepath": "data/layouts/NexusTreetop/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE1",
+      "name": "Treetop_House1_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House1/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE2",
+      "name": "Treetop_House2_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House2/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE3",
+      "name": "Treetop_House3_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House3/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE4",
+      "name": "Treetop_House4_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House4/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House4/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE5",
+      "name": "Treetop_House5_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House5/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House5/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE6",
+      "name": "Treetop_House6_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House6/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House6/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE7",
+      "name": "Treetop_House7_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House7/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House7/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE8",
+      "name": "Treetop_House8_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House8/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House8/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE9",
+      "name": "Treetop_House9_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House9/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House9/map.bin"
+    },
+    {
+      "id": "LAYOUT_TREETOP_HOUSE10",
+      "name": "Treetop_House10_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Treetop_House10/border.bin",
+      "blockdata_filepath": "data/layouts/Treetop_House10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEXUS_UNDERWATER",
+      "name": "NexusUnderwater_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/NexusUnderwater/border.bin",
+      "blockdata_filepath": "data/layouts/NexusUnderwater/map.bin"
     }
   ]
 }

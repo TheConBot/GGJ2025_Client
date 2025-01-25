@@ -53,8 +53,8 @@
       "x": 32,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_METEOR_FALLS_B1F_1R",
-      "dest_warp_id": "5"
+      "dest_map": "MAP_NEXUS_TREETOP",
+      "dest_warp_id": "10"
     }
   ],
   "coord_events": [

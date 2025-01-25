@@ -1061,3 +1061,29 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NewMap1/scripts.inc"
 
 	.include "data/maps/TheRoom/scripts.inc"
+
+	.include "data/maps/NexusTreetop/scripts.inc"
+
+	.include "data/maps/Treetop_House1/scripts.inc"
+
+	.include "data/maps/Treetop_House2/scripts.inc"
+
+	.include "data/maps/Treetop_House3/scripts.inc"
+
+	.include "data/maps/Treetop_House4/scripts.inc"
+
+	.include "data/maps/Treetop_House5/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/Treetop_House6/scripts.inc"
+
+	.include "data/maps/Treetop_House7/scripts.inc"
+
+	.include "data/maps/Treetop_House8/scripts.inc"
+
+	.include "data/maps/Treetop_House9/scripts.inc"
+
+	.include "data/maps/Treetop_House10/scripts.inc"
+
+	.include "data/maps/NexusUnderwater/scripts.inc"

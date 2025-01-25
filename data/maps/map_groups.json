@@ -623,8 +623,23 @@
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
   ],
-  "gMapGroup_DragonVillage":[
+  "gMapGroup_DragonVillage": [
     "NewMap1",
     "TheRoom"
+  ],
+  "gMapGroup_Bubble": [
+    "NexusTreetop",
+    "Treetop_House1",
+    "Treetop_House2",
+    "Treetop_House3",
+    "Treetop_House4",
+    "Treetop_House5",
+    "NewMap2",
+    "Treetop_House6",
+    "Treetop_House7",
+    "Treetop_House8",
+    "Treetop_House9",
+    "Treetop_House10",
+    "NexusUnderwater"
   ]
 }
