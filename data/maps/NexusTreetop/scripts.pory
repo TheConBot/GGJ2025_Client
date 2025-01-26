@@ -1,0 +1,29 @@
+mapscripts NexusTreetop_MapScripts
+{
+}
+
+
+script NexusTreetop_EventScript_Yasu
+{
+	trainerbattle_single(TRAINER_YASU, t_Yasu_Intro, t_Yasu_Defeat)
+	msgbox(t_Yasu_PostBattle, MSGBOX_AUTOCLOSE)
+}
+
+text(local) t_Yasu_Intro
+{
+	"I've been training in here\n"
+	"For 20 years!$"
+}
+
+text(local) t_Yasu_Defeat
+{
+    "I must have not trained\p"
+    "nearly enough.$"
+}
+
+text(local) t_Yasu_PostBattle
+{
+    "Time doesn't move forward\p"
+    "when you're in the bubble.$"
+}
+
