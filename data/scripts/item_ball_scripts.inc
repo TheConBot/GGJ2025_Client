@@ -14,10 +14,6 @@ Route104_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end
 
-Route104_EventScript_ItemPokeBall::
-	finditem ITEM_MASTER_BALL
-	end
-
 Route104_EventScript_ItemXAccuracy::
 	finditem ITEM_X_ACCURACY
 	end

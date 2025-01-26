@@ -15,6 +15,20 @@ TheRoom_EventScript_DragonLady_1:
 	end
 
 
+TheRoom_EventScript_ItemMasterBall::
+# 32 "data/maps/TheRoom/scripts.pory"
+	finditem ITEM_MASTER_BALL
+# 33 "data/maps/TheRoom/scripts.pory"
+	goto_if_set FLAG_SYS_PRESLEY_DEFEATED, TheRoom_EventScript_ItemMasterBall_2
+TheRoom_EventScript_ItemMasterBall_1:
+	end
+
+TheRoom_EventScript_ItemMasterBall_2:
+# 35 "data/maps/TheRoom/scripts.pory"
+	setflag FLAG_HIDE_DRAGONVILLAGE_OLDLADY
+	goto TheRoom_EventScript_ItemMasterBall_1
+
+
 t_DragonLady_MasterBall::
 # 16 "data/maps/TheRoom/scripts.pory"
 	.string "Hi {PLAYER}!\p"

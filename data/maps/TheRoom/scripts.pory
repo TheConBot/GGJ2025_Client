@@ -26,3 +26,14 @@ text t_DragonLady_MasterBall_Lost
 	"I had a MASTER BALL,\n"
 	"but now I cant find it anywhere!$"
 }
+
+script TheRoom_EventScript_ItemMasterBall
+{
+	finditem(ITEM_MASTER_BALL)
+	if(flag(FLAG_SYS_PRESLEY_DEFEATED))
+	{
+		setflag(FLAG_HIDE_DRAGONVILLAGE_OLDLADY)
+	}
+	end
+}
+

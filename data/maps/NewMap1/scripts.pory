@@ -1,0 +1,84 @@
+mapscripts NewMap1_MapScripts
+{
+	MAP_SCRIPT_ON_LOAD: InitPlayer
+}
+
+script InitPlayer
+{
+    if(!flag(FLAG_SYS_POKEMON_GET))
+    {
+        givemon(SPECIES_DRATINI, 25, ITEM_DRAGON_FANG)
+        setflag(FLAG_SYS_POKEDEX_GET)
+        setflag(FLAG_SYS_POKEMON_GET)
+    }
+    end
+}
+
+script NewMap1_EventScript_CitySign
+{
+	msgbox(t_DragonVillage_Sign, MSGBOX_SIGN)
+}
+
+script NewMap1_EventScript_LittleGirl
+{
+	msgbox(t_LittleGirl_Skibidi, MSGBOX_NPC)
+}
+
+script NewMap1_EventScript_Presley
+{
+	trainerbattle_single(TRAINER_PRESLEY, t_OlderBoy_Intro, t_OlderBoy_Defeat, NewMap1_EventScript_Presley_PostDefeat)
+	msgbox(t_OlderBoy_PostBattle, MSGBOX_AUTOCLOSE)
+}
+
+script NewMap1_EventScript_CaveOldLady
+{
+	msgbox(t_CaveOldLady_Ritual, MSGBOX_NPC)
+}
+
+script NewMap1_EventScript_Presley_PostDefeat
+{
+	setflag(FLAG_SYS_PRESLEY_DEFEATED)
+	if(flag(FLAG_ITEM_ROUTE_104_POKE_BALL))
+	{
+		setflag(FLAG_HIDE_DRAGONVILLAGE_OLDLADY)
+	}
+	end
+}
+
+text t_CaveOldLady_Ritual
+{
+    "We are still preparing for the\n"
+	"ritual.\p"
+	"Go play in the village for a bit.$"
+}
+
+text(local) t_DragonVillage_Sign
+{
+	"{LEFT_ARROW} Dragon Village\n"
+	"Dragon Guru Cave {RIGHT_ARROW}$"
+}
+
+text(local) t_LittleGirl_Skibidi
+{
+	"My brother keeps saying SKIBIDI.\p"
+	"I think he's got brainrot!$"
+}
+
+text(local) t_OlderBoy_Intro
+{
+	"DRAGON types are so SKIBIDI!\p"
+	"You wouldn't get it,\n"
+	"boomer.$"
+}
+
+text(local) t_OlderBoy_Defeat
+{
+    "Fr, you just vibed on me.\p"
+    "Respect, though.$"
+}
+
+text(local) t_OlderBoy_PostBattle
+{
+    "Bruh, you got any snacks?\p"
+    "Battling makes me hungry.$"
+}
