@@ -5248,14 +5248,19 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Humberto[] = {
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Presley[] = {
     {
-    .iv = 0,
-    .lvl = 2,
-    .species = SPECIES_SKITTY,
+    .iv = 50,
+    .lvl = 19,
+    .species = SPECIES_DRATINI,
     },
     {
-    .iv = 0,
-    .lvl = 3,
-    .species = SPECIES_RALTS,
+    .iv = 50,
+    .lvl = 21,
+    .species = SPECIES_BAGON,
+    },
+    {
+    .iv = 50,
+    .lvl = 22,
+    .species = SPECIES_TRAPINCH,
     }
 };
 
