@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_WOMAN",
-      "x": 32,
+      "x": 33,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -66,8 +66,8 @@
       "x": 32,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_NEXUS_TREETOP",
-      "dest_warp_id": "10"
+      "dest_map": "MAP_THE_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

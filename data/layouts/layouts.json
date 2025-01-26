@@ -4560,6 +4560,26 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/NexusUnderwater/border.bin",
       "blockdata_filepath": "data/layouts/NexusUnderwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_CAVE",
+      "name": "TheCave_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TheCave/border.bin",
+      "blockdata_filepath": "data/layouts/TheCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_THE_CAVE2",
+      "name": "TheCave2_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TheCave2/border.bin",
+      "blockdata_filepath": "data/layouts/TheCave2/map.bin"
     }
   ]
 }

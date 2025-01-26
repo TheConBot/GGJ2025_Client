@@ -116,8 +116,8 @@
       "x": 8,
       "y": 35,
       "elevation": 0,
-      "dest_map": "MAP_NEW_MAP1",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_THE_CAVE2",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

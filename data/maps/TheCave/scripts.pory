@@ -1,0 +1,123 @@
+raw `
+.set LOCALID_GURU, 1
+`
+
+mapscripts TheCave_MapScripts 
+{
+    MAP_SCRIPT_ON_LOAD: TheCave_OnLoad
+    MAP_SCRIPT_ON_FRAME_TABLE 
+    [
+        VAR_DRAGON_VILLAGE_STATE, 0: TheCave_MapScript_DragonVillageState0
+    ]
+}
+
+script TheCave_OnLoad
+{
+    setholewarp(MAP_THE_CAVE2)
+}
+
+script TheCave_MapScript_DragonVillageState0
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, m_Player_Walkup)
+    delay(60)
+    playse(SE_PIN)
+    applymovement(LOCALID_GURU, m_Guru_Opening)
+    waitmovement(0)
+    msgbox(t_Guru_Opening, MSGBOX_DEFAULT)
+    applymovement(LOCALID_GURU, m_Guru_Opening1)
+    waitmovement(0)
+    msgbox(t_Guru_Opening1, MSGBOX_DEFAULT)
+    applymovement(LOCALID_GURU, m_Guru_Opening2)
+    waitmovement(0)
+    msgbox(t_Guru_Opening2, MSGBOX_DEFAULT)
+    applymovement(LOCALID_GURU, m_Guru_Opening3)
+    delay(60)
+    applymovement(LOCALID_GURU, m_Guru_Opening4)
+    waitmovement(0)
+    setvar(VAR_0x8004, 1)
+	setvar(VAR_0x8005, 1)
+	setvar(VAR_0x8006, 8)
+	setvar(VAR_0x8007, 5)
+    delay(60)
+	special(ShakeCamera)
+    applymovement(OBJ_EVENT_ID_PLAYER, m_Player_Walkup)
+    delay(60)
+    special(ShakeCamera)
+    applymovement(OBJ_EVENT_ID_PLAYER, m_Player_Walkup)
+    delay(60)
+    special(ShakeCamera)
+    applymovement(OBJ_EVENT_ID_PLAYER, m_Player_Walkup)
+    delay(60)
+    setvar(VAR_DRAGON_VILLAGE_STATE, 1)
+    release
+}
+
+movement(local) m_Guru_Opening
+{
+	emote_exclamation_mark
+	delay_16 * 2
+    walk_down
+    walk_down
+    step_end
+}
+
+movement(local) m_Guru_Opening1
+{
+	walk_up
+    delay_16 * 2
+}
+
+movement(local) m_Guru_Opening2
+{
+	face_down
+    delay_16 * 2
+}
+
+movement(local) m_Guru_Opening3
+{
+	walk_down
+    delay_16 * 2
+}
+movement(local) m_Guru_Opening4
+{
+    walk_left
+	walk_down
+    walk_down
+    walk_right
+    face_up
+    delay_16 * 2
+}
+
+movement(local) m_Player_Walkup
+{
+	walk_up
+    delay_16 * 2
+}
+
+text(local) t_Guru_Opening
+{
+    "Hello, young one.\p"
+    "I am the Dragon Guru!$"
+}
+
+text(local) t_Guru_Opening1
+{
+    "I have been waiting for you.\p"
+    "I have a gift for you.$"
+}
+
+text(local) t_Guru_Opening2
+{
+    "You must eat these strange mushrooms,\n"
+    "and become a true DRAGON TAMER.\p"
+    "All of your ancestors have passed\n"
+    "this trial.$"
+}
+
+text(local) t_Guru_Opening3
+{
+    "Do this and burst free from the bubble!\p"
+    "Good luck,\n"
+    "young DRAGON TAMER.$"
+}

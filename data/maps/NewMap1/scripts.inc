@@ -60,7 +60,7 @@ NewMap1_EventScript_Presley_PostDefeat_2:
 	goto NewMap1_EventScript_Presley_PostDefeat_1
 
 
-t_CaveOldLady_Ritual::
+t_CaveOldLady_Ritual:
 # 48 "data/maps/NewMap1/scripts.pory"
 	.string "We are still preparing for the\n"
 	.string "ritual.\p"

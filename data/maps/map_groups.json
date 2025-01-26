@@ -625,7 +625,9 @@
   ],
   "gMapGroup_DragonVillage": [
     "NewMap1",
-    "TheRoom"
+    "TheRoom",
+    "TheCave",
+    "TheCave2"
   ],
   "gMapGroup_Bubble": [
     "NexusTreetop",

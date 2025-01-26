@@ -1087,3 +1087,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Treetop_House10/scripts.inc"
 
 	.include "data/maps/NexusUnderwater/scripts.inc"
+
+	.include "data/maps/TheCave/scripts.inc"
+
+	.include "data/maps/TheCave2/scripts.inc"

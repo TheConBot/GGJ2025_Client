@@ -45,7 +45,7 @@ script NewMap1_EventScript_Presley_PostDefeat
 	end
 }
 
-text t_CaveOldLady_Ritual
+text(local) t_CaveOldLady_Ritual
 {
     "We are still preparing for the\n"
 	"ritual.\p"
