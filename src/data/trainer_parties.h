@@ -11600,6 +11600,23 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Darius[] = {
     }
 };
 
+static const struct TrainerMonItemCustomMoves sParty_BubbleDenizen[] = {
+    {
+    .iv = 100,
+    .lvl = 27,
+    .species = SPECIES_AZUMARILL,
+    .heldItem = ITEM_WATER_STONE,
+    .moves = {MOVE_BUBBLE_BEAM, MOVE_RAIN_DANCE, MOVE_ENCORE, MOVE_ROLLOUT}
+    },
+    {
+    .iv = 100,
+    .lvl = 28,
+    .species = SPECIES_SPHEAL,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .moves = {MOVE_ROLLOUT, MOVE_REST, MOVE_SLEEP_TALK, MOVE_AURORA_BEAM}
+    }
+};
+
 static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     {
     .iv = 255,

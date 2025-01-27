@@ -1,39 +1,28 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
-	.string "$"
+	.string "Welcome, young DRAGON TAMER!\p"
+    .string "In this village, we raise DRAGONs\n"
+    .string "with care and dedication.\p"
+    .string "Each DRAGON is a symbol of our\n"
+    .string "strength and wisdom.$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
-	.string "\n"
-	.string "$"
+	.string "Today marks the beginning of your\n"
+    .string "coming of age ritual.\p"
+    .string "You will embark on a journey to\n"
+    .string "prove your worth as a true DRAGON TAMER.$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
-	.string "$"
+	.string "Your task is to bond with a DRATINI\n"
+    .string "and demonstrate your mastery.\p"
+    .string "Only then will you earn the title\n"
+    .string "of a true DRAGON TAMER.$"
 
 gText_Birch_AndYouAre::
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Which of these appearances suites you?\n"
+	.string "best?$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"
@@ -44,8 +33,8 @@ gText_Birch_SoItsPlayer::
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
+	.string "You're {PLAYER}{KUN} who lives in their\n"
+	.string "hometown of DRAGON VILLAGE.\l"
 	.string "I get it now!\p"
 	.string "$"
 
@@ -55,7 +44,4 @@ gText_Birch_AreYouReady::
 	.string "to unfold.\p"
 	.string "Take courage, and leap into the\n"
 	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
-	.string "$"
+	.string "adventure, and friendships await!$"

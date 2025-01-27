@@ -1,1 +1,11 @@
-mapscripts TheCave2_MapScripts {}
+mapscripts TheCave2_MapScripts
+{
+    MAP_SCRIPT_ON_TRANSITION: TheCave2_OnTransition
+}
+
+script(local) TheCave2_OnTransition
+{
+    setrespawn(HEAL_LOCATION_THE_BUBBLE)
+    end
+}
+

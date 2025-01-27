@@ -1,7 +1,135 @@
+raw `
+.set LOCALID_AZUMARILL, 4
+`
+
 mapscripts NexusTreetop_MapScripts
 {
+    MAP_SCRIPT_ON_RESUME: TreeTop_OnResume
 }
 
+script TreeTop_EventScript_RareCandy
+{
+	finditem(ITEM_RARE_CANDY)
+	end
+}
+
+script TreeTop_EventScript_TMToxic
+{
+	finditem(ITEM_TM_TOXIC)
+	end
+}
+
+script(local) TreeTop_OnResume
+{
+	if (flag(FLAG_SYS_BUBBLEDENIZEN_DEFEATED)) 
+    {
+		removeobject(LOCALID_AZUMARILL)
+	}
+}
+
+script TreeTop_EventScript_BubbleDenizen
+{
+    lock
+	if(flag(FLAG_SYS_BUBBLEDENIZEN_DEFEATED) && var(VAR_TREETOP_AZUMARILL) < 2)
+	{
+		msgbox(format("Leave us alone!"), MSGBOX_DEFAULT)
+        waitmessage
+        release
+		end
+	}
+	elif(flag(FLAG_SYS_BUBBLEDENIZEN_DEFEATED))
+	{
+		msgbox(format("AZUMARILL loves belly rubs! Oh, also, did you know? One of the houses has a secret passage in it!"), MSGBOX_NPC)
+        waitmessage
+        release
+		end
+	}
+	if(var(VAR_TREETOP_AZUMARILL) == 1)
+	{
+		msgbox(format("Oh, you want to pet AZUMARILL? Sure! Here's a tip. They like belly rubs!"), MSGBOX_NPC)
+        waitmessage
+        release
+		setvar(VAR_TREETOP_AZUMARILL, 2)
+		end
+	}
+	elif(var(VAR_TREETOP_AZUMARILL) == 3)
+	{
+		trainerbattle_single(TRAINER_BUBBLE_DENIZEN, format("Thanks for petting AZUMARILL! Now, let's battle!"), format("Wow, DRAGON TAMERS sure are strong!"), TreeTop_EventScript_BubbleDenizen1_PostDefeat)
+        release
+		end
+	}
+	trainerbattle_single(TRAINER_BUBBLE_DENIZEN, format("Wow, a real life DRAGON TAMER! Let's battle!"), format("Wow, DRAGON TAMERS sure are strong!"), TreeTop_EventScript_BubbleDenizen1_PostDefeat)
+    release
+	end
+}
+
+script TreeTop_EventScript_Azumarill
+{
+    lock
+	msgbox(format("Pet the AZUMARILL?"), MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES)
+	{
+		call(TreeTop_EventScript_PetAzumarill)
+	}
+	else
+	{
+		call(TreeTop_EventScript_DontPetAzumarill)
+	}
+}
+
+script(local) TreeTop_EventScript_PetAzumarill
+{
+	if(var(VAR_TREETOP_AZUMARILL) < 2)
+	{
+		msgbox(format("The AZUMARILL bites you!"), MSGBOX_AUTOCLOSE)
+		playmoncry(SPECIES_AZUMARILL, CRY_MODE_ENCOUNTER)
+		delay(60)
+		trainerbattle_single(TRAINER_BUBBLE_DENIZEN, t_BubbleDenizen1_Intro_Angry, t_BubbleDenizen1_Outro_Angry, TreeTop_EventScript_BubbleDenizen1_PostDefeat)
+        release
+        end
+	}
+	else
+	{
+		msgbox(format("The AZUMARILL loves it!"), MSGBOX_AUTOCLOSE)
+		playmoncry(SPECIES_AZUMARILL, CRY_MODE_NORMAL)
+		if(var(VAR_TREETOP_AZUMARILL) == 2)
+		{
+			msgbox(format("The AZUMARILL has something to give you!"), MSGBOX_DEFAULT)
+			waitmessage
+			finditem(ITEM_WATER_STONE)
+			setvar(VAR_TREETOP_AZUMARILL, 3)
+		}
+        release
+        end
+	}
+}
+
+script(local) TreeTop_EventScript_DontPetAzumarill
+{
+	if(var(VAR_TREETOP_AZUMARILL) == 0)
+	{
+		msgbox(format("Probably a good idea not to pet strange AZUMARILL. If you ask the TRAINER, maybe she will let you pet it?"), MSGBOX_DEFAULT)
+		setvar(VAR_TREETOP_AZUMARILL, 1)
+	}
+}
+
+script TreeTop_EventScript_BubbleDenizen1_PostDefeat
+{
+	setflag(FLAG_SYS_BUBBLEDENIZEN_DEFEATED)
+	end
+}
+
+text(local) t_BubbleDenizen1_Intro_Angry
+{
+	"Hey, you!\p"
+	"Stay away from my AZUMARILL!$"
+}
+
+text(local) t_BubbleDenizen1_Outro_Angry
+{
+	"Get out of here!\p"
+	"Leave us alone!$"
+}
 
 script NexusTreetop_EventScript_Yasu
 {
